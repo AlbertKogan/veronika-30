@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+body {
+  background-color: #222;
+  color: #FFF;
+  font-weight: 700;
+    font-family: 'Monoton', cursive;
+    position: relative;
+    -webkit-text-size-adjust: none;
+	touch-action: manipulation;
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.main-title {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.main-title h1 {
+    font-size: 4em;
+}
+
+.back-1 {
+    background-image: url("/static/images/back-1.png");
+    background-repeat: no-repeat;
+    background-position: -28px -300px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back-2 {
+    background-image: url("/static/images/back-2.png");
+    background-repeat: no-repeat;
+    background-position: -61px 468px;
+    background-size: 300px auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back-3 {
+    background-image: url("/static/images/back-3.png");
+        transform: rotate(-30deg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 541px;
+    right: 0;
+    background-size: contain;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+h1 {
+  color: #fff;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
