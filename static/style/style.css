@@ -27,7 +27,7 @@ html, body {
 }
 
 .back-1 {
-    background-image: url("/static/images/back-1.png");
+    background-image: url("https://i.ibb.co/syG4xRv/back-1.png");
     background-repeat: no-repeat;
     background-position: -28px -300px;
     width: 100%;
@@ -38,7 +38,7 @@ html, body {
 }
 
 .back-2 {
-    background-image: url("/static/images/back-2.png");
+    background-image: url("https://i.ibb.co/f4PMj77/back-2.png");
     background-repeat: no-repeat;
     background-position: -61px 468px;
     background-size: 300px auto;
@@ -50,7 +50,7 @@ html, body {
 }
 
 .back-3 {
-    background-image: url("/static/images/back-3.png");
+    background-image: url("https://i.ibb.co/9tzJtQ9/back-3.png");
         transform: rotate(-30deg);
     background-repeat: no-repeat;
     width: 120px;
