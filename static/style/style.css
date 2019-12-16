@@ -1,25 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
+    }
+}
+
 body {
-  background-color: #222;
-  color: #FFF;
-  font-weight: 700;
+    background: linear-gradient(182deg, #1ebf95, #2a76ce, #7d26d2, #ce157e);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+    font-weight: 700;
     font-family: 'Monoton', cursive;
     position: relative;
     -webkit-text-size-adjust: none;
-	touch-action: manipulation;
+    touch-action: manipulation;
+    display: flex;
 
 }
+
 html, body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
+.wrapper {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid #10e203;
+    margin: 0 auto;
+}
+
+.animation {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    transform: rotate3d(1, 1, 1, -58deg);
+}
+
+.happy-30 {
+        position: absolute;
+    width: 100px;
+    height: auto;
+    top: 201px;
+    left: 20px;
+    transform: rotate(-9deg);
+}
+
+.happy-30-splash {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 353px;
+    right: 43px;
+    transform: rotate(-7deg);
+}
 .main-title {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
 
 .main-title h1 {
@@ -40,7 +116,7 @@ html, body {
 .back-2 {
     background-image: url("https://i.ibb.co/f4PMj77/back-2.png");
     background-repeat: no-repeat;
-    background-position: -61px 468px;
+    background-position: -61px 336px;
     background-size: 300px auto;
     width: 100%;
     height: 100%;
@@ -51,28 +127,42 @@ html, body {
 
 .back-3 {
     background-image: url("https://i.ibb.co/9tzJtQ9/back-3.png");
-        transform: rotate(-30deg);
+    transform: rotate(-30deg);
     background-repeat: no-repeat;
     width: 120px;
     height: 120px;
     position: absolute;
-    top: 541px;
+    top: 482px;
     right: 0;
     background-size: contain;
 }
 
+/*.emoji {*/
+/*    font-size: 2em;*/
+/*}*/
+
+.sub-text {
+    font-family: "Times New Roman";
+    position: absolute;
+    width: 191px;
+    height: 105px;
+    border: 5px dashed #1b2aff;
+    bottom: 11px;
+    left: 10px;
+}
+
 @-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
 }
 
 h1 {
-  color: #fff;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
 }

@@ -1,5 +1,16 @@
 // ESM syntax is supported.
 const a = 'test';
 
-console.log('a', a);
-export { a };
+const emojis = [
+	'😄','😃','😀','😊','😉','😍','😘','😚','😗','😙','😜','😝','😛','😁','😌','😂','😅','😆','😋','😎','😴','😇','👼','👸','😻','😽','😼','🙀','😹','💩','🔥','✨','🌟','💫','💥'
+];
+
+const emojiPlaceholder = document.getElementById('emoji');
+
+function randomEmoji() {
+  setInterval(() => {
+    emojiPlaceholder.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+  }, 1000)
+}
+
+export { randomEmoji };
